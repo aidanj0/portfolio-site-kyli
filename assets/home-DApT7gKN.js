@@ -1,0 +1,1 @@
+import{p as e,w as t}from"./chunk-UIGDSWPH-BjI8LrHh.js";function o(){return e.jsx("p",{children:"home placeholder"})}function c({}){return[{title:"New React Router App"},{name:"description",content:"Welcome to React Router!"}]}const m=t(function(){return e.jsx(o,{})});export{m as default,c as meta};
