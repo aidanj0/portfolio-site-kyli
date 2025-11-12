@@ -1,6 +1,8 @@
+import { OrangeHeader } from "~/components/headers/orange-header"
 
 export function Home() {
-  return (
+  return (<>
+    <OrangeHeader />
     <p>home placeholder</p>
-  )
+  </>)
 }
