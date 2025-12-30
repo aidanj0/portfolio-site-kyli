@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Andale Mono';
+    src: local('Andale Mono'), local('AndaleMono'),
+        url('fonts/AndaleMono.woff2') format('woff2'),
+        url('fonts/AndaleMono.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HeadLineA';
+    src: local('HeadLineA Regular'), local('JCHEadA'),
+        url('fonts/JCHEadA.woff2') format('woff2'),
+        url('fonts/JCHEadA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.andale {
+  font-family: "Andale Mono", monospace;
+}
+
+.headline {
+  font-family: "HeadlineA", serif;
+}

@@ -1,0 +1,143 @@
+body { 
+    margin: 0px;
+}
+
+.header-container * {
+  background-color: #D95A00;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 110px;
+  width: 100%;
+  column-gap: 200px;
+  position: fixed;
+}
+
+.header-text {
+  font-size: 32px;
+  text-decoration: none;
+  color: white;
+}
+
+.header-text:hover {
+  color: #DDDDDD;
+}
+
+.ig-logo * {
+  stroke: white;
+}
+
+.ig-logo:hover * {
+  stroke: #DDDDDD;
+}
+
+.horizontal-center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bold-txt-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin-top: 287px;
+  margin-bottom: 470px;
+}
+
+.bold-txt-container > p {
+  font-size: 60px;
+  color: #6D6D6D;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.bold-txt-container-bounded {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 805px;
+  gap: 75px;
+}
+
+.bold-txt-container-bounded > p {
+  font-size: 60px;
+  color: #6D6D6D;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.bold-txt-container-80 > p {
+  font-size: 80px;
+  color: #6D6D6D;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+.picture-display-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 580px;
+}
+
+.picture-display-title {
+  font-size: 50px;
+  color: #6D6D6D;
+  margin-bottom: 0px;
+  padding-left: 75px;
+}
+
+.pic-and-toggle-container {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
+.arrow {
+  font-size: 80px;
+  color: #6D6D6D;
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  color: #8D8D8D;
+}
+
+.picture-container {
+  background-color: white;
+  margin-left: 25px;
+  margin-right: 25px;
+  height: 600px;
+  width: 600px;
+}
+
+.picture-container > img {
+  width: 600px;
+  height: 600px;
+  object-fit: contain;
+}
+
+.portrait {
+  margin-top: 140px;
+  width: 537px;
+  height: 537px;
+  object-fit: contain;
+  margin-bottom: 240px;
+}
+
+.crew-photo {
+  margin-top: 140px;
+  width: 900px;
+  height: 900px;
+  object-fit: contain;
+  margin-bottom: 140px;
+}

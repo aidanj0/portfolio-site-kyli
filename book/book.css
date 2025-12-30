@@ -1,0 +1,97 @@
+body {
+  margin: 0px;
+}
+
+.main-flex {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.a-button-container {
+  width: 35%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.a-button-container > button {
+  margin-left: 20px;
+  width: 319px;
+  height: 93px;
+  background-color: #D95A00;
+  color: white;
+  font-size: 70px;
+  border-radius: 20px;
+  border: none;
+}
+
+div.a-button-container > button:hover {
+  background-color: #E96A00;
+  cursor: pointer;
+}
+
+.b-listings-container {
+  width: 45%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 8%;
+  justify-content: center;
+}
+
+div.listing-group {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 5px;
+}
+
+div.listing-group > p {
+  font-size: 32px;
+  margin: 0px;
+}
+
+.orange {
+  color: #D95A00;
+}
+
+.gray {
+  color: #6D6D6D;
+}
+
+div.c-sidebar-container {
+  width: 20%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: start;
+}
+
+div.c-sidebar-container > a {
+  margin-right: 16px;
+  margin-top: 16px;
+  text-decoration: none;
+  font-size: 32px;
+  margin: none;
+  cursor: pointer;
+}
+
+div.c-sidebar-container > a:hover {
+  color: #8D8D8D;
+}
+
+svg > * {
+  stroke: #6D6D6D;
+}
+
+svg:hover > * {
+  stroke: #8D8D8D;
+}

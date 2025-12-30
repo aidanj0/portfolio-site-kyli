@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Home - Kyli Photography</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="icon" type="image/png" href="../favicon.png"/>
+  </head>
+  <body>
+
+    <div class="header-container">
+      <div class="header">
+        <a href="./index.html" class="andale header-text">home</a>
+        <a href="https://www.instagram.com/kylihjo/" target="_blank" rel="noopener noreferrer">
+          <svg class="ig-logo" width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="30" height="28" rx="8" stroke-width="2"/>
+            <circle cx="16" cy="15" r="7" stroke-width="2"/>
+          </svg>
+        </a>
+        <a class="andale header-text" href="../book/index.html">book</a>
+      </div>
+    </div>
+
+    <div class="horizontal-center-container">
+
+      <div class="bold-txt-container headline">
+        <p>portrait photography</p>
+        <p>somerville, ma</p>
+      </div>
+
+      <script>
+        /**
+         * Transitions the image src for <id> either forward 1 or back 1 (right/left)
+         */
+        function changeImage(id, direction, limit) {
+          let currPath = document.getElementById(id).src;
+          //  for 'path/to/img/a.jpg', singles out 'a'
+          let currPicId = currPath.slice(-5)[0];
+          //  find a->z, z->a, a->b, or b->a (as examples of every case)
+          let nextPicId = '';
+          if (currPicId === 'a' && direction === 'left') {
+            nextPicId = limit;
+          } else if (currPicId === limit && direction === 'right') {
+            nextPicId = 'a';
+          } else {
+            nextPicId = String.fromCharCode(
+              currPicId.charCodeAt(0) + (direction === "right" ? 1 : -1)
+            );
+          }
+          //  reconstructs a path with the new pic id
+          nextPath = currPath.slice(0, -5) + nextPicId + '.jpg';
+          document.getElementById(id).src = nextPath;
+          document.getElementById(id).alt = nextPicId;
+        }
+      </script>
+
+      <div class="picture-display-container">
+        <p class="picture-display-title andale">CREATIVE WORK</p>
+        <div class="pic-and-toggle-container">
+          <p class="andale arrow" onclick="changeImage('creativeImg', 'left', 'o')"><</p>
+          <div class="picture-container">
+            <img src="../images/creative/a.jpg" id="creativeImg"/>
+          </div>
+          <p class="andale arrow" onclick="changeImage('creativeImg', 'right', 'o')">></p>
+        </div>
+      </div>
+
+      <div class="picture-display-container">
+        <p class="picture-display-title andale">INDIVIDUAL SESSIONS</p>
+        <div class="pic-and-toggle-container">
+          <p class="andale arrow" onclick="changeImage('individualImg', 'left', 'm')"><</p>
+          <div class="picture-container">
+            <img src="../images/individual /a.jpg" id="individualImg"/>
+          </div>
+          <p class="andale arrow" onclick="changeImage('individualImg', 'right', 'm')">></p>
+        </div>
+      </div>
+
+      <div class="picture-display-container">
+        <p class="picture-display-title andale">GRADUATION</p>
+        <div class="pic-and-toggle-container">
+          <p class="andale arrow" onclick="changeImage('gradImg', 'left', 'k')"><</p>
+          <div class="picture-container">
+            <img src="../images/graduation/a.jpg" id="gradImg"/>
+          </div>
+          <p class="andale arrow" onclick="changeImage('gradImg', 'right', 'k')">></p>
+        </div>
+      </div>
+
+      <div class="picture-display-container">
+        <p class="picture-display-title andale">CREW SESSIONS</p>
+        <div class="pic-and-toggle-container">
+          <p class="andale arrow" onclick="changeImage('crewImg', 'left', 'm')"><</p>
+          <div class="picture-container">
+            <img src="../images/crew/a.jpg" id="crewImg"/>
+          </div>
+          <p class="andale arrow" onclick="changeImage('crewImg', 'right', 'm')">></p>
+        </div>
+      </div>
+
+      <div class="bold-txt-container-80 headline">
+        <p>kyli j hilaire</p>
+      </div>
+
+      <img class="portrait" src="../images/self.JPG"/>
+
+      <div class="bold-txt-container-bounded headline">
+        <p>
+          I’m a dancer and photographer
+who moved to Somerville after 
+graduating to join the Greater Boston
+arts community. I was self taught until
+university, where I earned a minor in
+photography.
+        </p>
+        <p>
+          Thanks to my experiences in
+Pittsburgh, my work has taken on more
+dimension and I’m happy to be a part
+of a new community !
+        </p>
+      </div>
+
+      <img class="crew-photo" src="../images/cmu dance!.PNG"/>
+
+    </div>
+
+  </body>
+</html>
